@@ -16,11 +16,11 @@ import streamlit as st
 import time
 
 st.title("AI Chatbot powered by OpenAI")
-st.caption("언어모델 : chatgpt-3.5-turbo")
+st.caption("언어모델 : gpt-4o")
 
 # Set a default model
 if "openai_model" not in st.session_state:
-    st.session_state["openai_model"] = "gpt-3.5-turbo"
+    st.session_state["openai_model"] = "gpt-4o"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
